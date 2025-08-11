@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+    <link href="/src/output.css" rel="stylesheet">
+    <title>Frontend Mentor | Interactive rating component</title>
+
+  </head>
+  <body class=" flex justify-center items-center h-screen bg-gray-950">
+    <div class="card ">
+      <div class="image">
+        <img src="images/icon-star.svg" alt="starico"
+          class="rounded-full my-6 mx-6 bg-[rgba(38,47,53,1)] p-3">
+      </div>
+
+      <div class="txt-info  box-border pb-6">
+        <h1 class="txt-h1 mb-3 indent-6 ">How did we do?</h1>
+        <p class=" txt-p indent-6 pr-5 ">Please let us know how we did with
+          your<br>
+          <span>support request.All feedback is appreciated</span><br>
+          <span>to help us improve our offering</span></p>
+      </div>
+      <div class="rating flex justify-between mx-6 mb-6 ischecked">
+        <div class="num ">1</div>
+        <div class="num">2</div>
+        <div class="num ">3</div>
+        <div class="num ">4</div>
+        <div class="num">5</div>
+
+      </div>
+
+      <div class="flex justify-center">
+        <button id="btnSubmit"
+          class="bg-amber-600 w-10/12 rounded-3xl mb-5 py-3 font-bold tracking-widest text-gray-800 hover:bg-white hover:text-black transition-all cursor-pointer">SUBMIT</button>
+      </div>
+
+    </div>
+
+    <div class="card hidden">
+      <div class="imagePhone">
+        <img src="images/illustration-thank-you.svg"
+          class="scale-95 text-center mt-10 mb-7 mx-auto pr-5" alt="ty">
+      </div>
+
+     
+      <p id="rating" class="rounded-3xl text-center w-[60%] mx-auto pt-1.5 pb-1 bg-gray-800 text-amber-600 opacity-90"></p>
+      
+
+      <div class="txt-info  box-border pb-6 text-center mt-5 px-5">
+        <h1 class="txt-h1 my-3">Thank you!</h1>
+        <p class="txt-p">We appreciate you taking the time to give a<br> 
+          rating.If you ever need more support,don't<br>
+            hesitate to get in touch!
+        </div>
+      </div>
+
+    
+    </body>
+    <script src="main.js"></script>
+  </html>

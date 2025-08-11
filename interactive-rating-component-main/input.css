@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+
+* {
+    font-family: "Overpass", sans-serif;
+}
+
+@custom-variant ischecked (&:where(.ischecked, .ischecked *));
+
+
+@layer components{
+
+    .card{
+        @apply h-96 rounded-2xl 
+        bg-radial-[at_30%_25%]
+        from-gray-800 to-gray-900 px-2;
+    }
+
+    .txt-h1{
+       @apply text-3xl font-medium text-white;
+    }
+    .txt-p{
+        @apply text-[15px] text-white opacity-50
+    }
+
+    .num {
+    @apply bg-[#262f38] /* hex for rgb(38, 47, 56) */
+     py-3 px-5 rounded-full font-bold 
+     text-gray-300 hover:bg-amber-600 hover:text-gray-950  cursor-pointer transition-all;
+    }
+}
+
+@layer  base{
+   span{
+    @apply inline-block indent-6;
+   }
+}
+
+
+
+
+
